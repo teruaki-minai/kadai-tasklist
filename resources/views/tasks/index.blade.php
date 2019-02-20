@@ -1,7 +1,5 @@
-@extends("layouts.app")
 
-@section("content")
-
+ 
     <h1>タスク一覧</h1>
     
     @if (count($tasks) > 0)
@@ -24,6 +22,4 @@
             </tbody>
         </table>
     @endif
-    
-    {!! link_to_route("tasks.create", "新規タスク作成", null, ["class" => "btn btn-outline-primary btn-lg"]) !!}
-@endsection
+     {!! link_to_route('tasks.create', '新規メッセージの投稿', null, ['class' => 'btn btn-outline-primary']) !!}
